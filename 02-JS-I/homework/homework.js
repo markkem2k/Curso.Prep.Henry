@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = Marco;
+const nuevaString = 'Marco';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 2;
@@ -78,7 +78,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 98) {
+  if (num < 90) {
     return true; 
   } else {
     return false; 
@@ -142,26 +142,26 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-    ///var resto = num % 1;
-    ///var entero = num - resto;
-    ///if (resto >)= 0.5) {
-    /// return entero + 1; 
-    /// }else {
-    ///  return entero;
-    ///}
-  return Math.round (num);
+    //var resto = num % 1;
+    //var entero = num - resto;
+    //if (resto >)= 0.5) {
+    //return entero + 1; 
+    // }else {
+    //return entero;
+    //}
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.random();
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -173,7 +173,7 @@ function esPositivo(numero) {
     return false;
   }
   else if (numero > 0) {
-    return "Es postivo"; 
+    return "Es positivo"; 
   }
   else {
     return "Es negativo"; 
@@ -191,15 +191,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinados = nombre + ' ' + apellido
-  return combinados; 
+  var combinado = nombre + ' ' + apellido
+  return combinado; 
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + Marco + '!'
+  return 'Hola ' + nombre + '!'
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -240,7 +240,7 @@ function esVocal(letra){
   if (letra.length > 1){
     return "Dato incorrecto"
   }
-  if(letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U"){
+  if(letra === "a" | letra === "e" | letra === "i" | letra === "o" | letra === "u") {
     return "Es vocal"
   }
   return "Dato incorrecto"
